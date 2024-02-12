@@ -6,6 +6,7 @@ body{
     color: #eee;
     margin: 0;
     font-size: 12;
+    overflow: hidden;
 }
 a{
     text-decoration: none;
@@ -26,12 +27,15 @@ header a{
 }
 
 /*carousel*/
-.carousel{
+
+.carousel {
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
-    margin-top: -50px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
 }
+
 .carousel .list .item{
     position: absolute;
     inset: 0 0 0 0;
@@ -45,8 +49,7 @@ header a{
     position: absolute;
     top:20%;
     width: 1140px;
-    max-width: 
-    80%;
+    max-width:80%;
     left: 50%;
     transform: translateX(-50%);
     padding-right: 30%;
@@ -62,6 +65,7 @@ header a{
 .carousel .list .item .content .topic{
     font-weight: bold;
     font-size: 5em;
+    line-height: 1.3em;
 }
 .carousel .list .item .content .topic{
     color: orangered;
@@ -74,7 +78,7 @@ header a{
     margin-top: 20px;
 }
 .carousel .list .item .content button{
-    border: none;
+    border: none;  
     background: #eee;
     letter-spacing: 3px;
     font-family: Arial, Helvetica, sans-serif;
@@ -273,7 +277,7 @@ header a{
         width:0;
     }
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width: 678px) {
     .carousel .list .item .content{
         padding-right: 0;
     }
